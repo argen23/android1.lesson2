@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second_activity">
+
+    <ImageView
+    android:layout_width="420dp"
+    android:layout_height="200dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:src="@drawable/wecrtcg"
+    android:layout_marginTop="20dp"
+    />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/white"
+        android:text="THE COLOSSEUM"
+        android:textSize="24dp"
+        />
+    <TextView
+        android:id="@+id/tv_lon_text"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="180dp"
+        android:textColor="#7E7A7A"
+        android:text="one of the most recognizable sites in the world"
+        />
+    <ImageButton
+        android:id="@+id/btn_photo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lon_text"
+        android:src="@drawable/vector"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        />
+    <ImageButton
+        android:id="@+id/btn_contacts"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/oreooero"
+        app:layout_constraintStart_toEndOf="@+id/btn_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_lon_text"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_google"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/vvecotr"
+        app:layout_constraintStart_toEndOf="@+id/btn_contacts"
+        app:layout_constraintTop_toBottomOf="@id/tv_lon_text"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_contacts"
+        android:layout_marginBottom="50dp"
+        android:text="234"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:onClick="go_btn2"
+        android:layout_width="200dp"
+        android:layout_height="59dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_number"
+        android:layout_marginTop="30dp"
+        android:background="#FF6363"
+        android:text="ПЕРЕЙТИ"
+        android:textColor="@color/white"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
